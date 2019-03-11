@@ -20,6 +20,13 @@ namespace ConsoleApp1
             B = int.Parse(Console.ReadLine());
         }
 
+        static void addition(int A, int B)
+        {
+            Console.Clear();
+            int C = A + B;
+            Console.WriteLine("{0} + {1} = {2}", A, B, C);
+        }
+
         static void Main(string[] args)
         {
             int A = 0, B = 0;
@@ -48,7 +55,7 @@ namespace ConsoleApp1
                         break;
 
                     case 3:
-                        //addition(A, B);
+                        addition(A, B);
                         break;
 
                     case 4:
