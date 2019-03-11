@@ -6,7 +6,12 @@ namespace ConsoleApp1
     {
         const int menuSize = 5;
 
-
+        static void addA(int A)
+        {
+            Console.Clear();
+            Console.WriteLine("Input A");
+            A = int.Parse(Console.ReadLine());
+        }
 
         static void Main(string[] args)
         {
