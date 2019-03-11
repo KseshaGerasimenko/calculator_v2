@@ -13,6 +13,13 @@ namespace ConsoleApp1
             A = int.Parse(Console.ReadLine());
         }
 
+        static void addB(int B)
+        {
+            Console.Clear();
+            Console.WriteLine("Input B");
+            B = int.Parse(Console.ReadLine());
+        }
+
         static void Main(string[] args)
         {
             int A = 0, B = 0;
@@ -33,11 +40,11 @@ namespace ConsoleApp1
                 switch (menuIndex)
                 {
                     case 1:
-                        //addA(A);
+                        addA(A);
                         break;
 
                     case 2:
-                        //addB(B);
+                        addB(B);
                         break;
 
                     case 3:
