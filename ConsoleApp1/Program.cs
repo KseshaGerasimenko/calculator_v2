@@ -6,7 +6,12 @@ namespace ConsoleApp1
     {
         const int menuSize = 5;
 
-
+        static void addition(int A, int B)
+        {
+            Console.Clear();
+            int C = A + B;
+            Console.WriteLine("{0} + {1} = {2}", A, B, C);
+        }
 
         static void Main(string[] args)
         {
