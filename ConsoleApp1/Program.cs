@@ -41,6 +41,13 @@ namespace ConsoleApp1
             Console.WriteLine("{0} * {1} = {2}", A, B, C);
             Console.ReadKey();
         }
+        static void division(int A, int B)
+        {
+            Console.Clear();
+            int C = A / B;
+            Console.WriteLine("{0}/{1} = {2}", A, B, C);
+            Console.ReadKey();
+        }
 
         static void Main(string[] args)
         {
@@ -82,7 +89,7 @@ namespace ConsoleApp1
                         break;
 
                     case 6:
-                        //division(A, B);
+                        division(A, B);
                         break;
                 }
 
