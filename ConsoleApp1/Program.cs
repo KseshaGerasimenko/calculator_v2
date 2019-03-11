@@ -19,6 +19,13 @@ namespace ConsoleApp1
             Console.WriteLine("Input B");
             B = int.Parse(Console.ReadLine());
         }
+        static void subtraction(int A, int B)
+        {
+            Console.Clear();
+            int C = A - B;
+            Console.WriteLine("{0} - {1} = {2}", A, B, C);
+            Console.ReadKey();
+        }
 
         static void addition(int A, int B)
         {
