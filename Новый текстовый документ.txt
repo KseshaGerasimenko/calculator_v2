@@ -1,0 +1,2269 @@
+
+B0dun@DESKTOP-J3I95AK MINGW64 ~
+$ cd C:\\git
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git
+$ git init calculator
+Initialized empty Git repository in C:/git/calculator/.git/
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git
+$ cd calculator
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        calculator/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator (master)
+$ git add .
+error: open("calculator/.vs/calculator/v15/Server/sqlite3/db.lock"): Permission denied
+error: unable to index file 'calculator/.vs/calculator/v15/Server/sqlite3/db.lock'
+fatal: adding files failed
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator (master)
+$ cd calculator
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add .
+error: open("calculator/.vs/calculator/v15/Server/sqlite3/db.lock"): Permission denied
+error: unable to index file 'calculator/.vs/calculator/v15/Server/sqlite3/db.lock'
+fatal: adding files failed
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add .
+error: open("calculator/.vs/calculator/v15/Server/sqlite3/db.lock"): Permission denied
+error: unable to index file 'calculator/.vs/calculator/v15/Server/sqlite3/db.lock'
+fatal: adding files failed
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git init
+Initialized empty Git repository in C:/git/calculator/calculator/.git/
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vs/
+        App.config
+        Program.cs
+        Properties/
+        calculator.csproj
+        calculator.sln
+        obj/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add .
+error: open(".vs/calculator/v15/Server/sqlite3/db.lock"): Permission denied
+error: unable to index file '.vs/calculator/v15/Server/sqlite3/db.lock'
+fatal: adding files failed
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add bin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add obj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add Properties
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add App.config
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add calculator.csproj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add calculator.sln
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   App.config
+        new file:   Program.cs
+        new file:   Properties/AssemblyInfo.cs
+        new file:   calculator.csproj
+        new file:   calculator.sln
+        new file:   obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+        new file:   obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+        new file:   obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+        new file:   obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+        new file:   obj/Debug/calculator.csproj.CoreCompileInputs.cache
+        new file:   obj/Debug/calculator.csprojAssemblyReference.cache
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vs/
+
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git diff
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git diff
+diff --git a/Program.cs b/Program.cs
+index 3093282..4a68d7b 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -27,7 +27,7 @@ namespace calculator
+                 Console.WriteLine("2. Subtraction");
+                 Console.WriteLine("3. Multiplication");
+                 Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit");
++                Console.WriteLine("5. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git diff
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git commit -m "Add menu"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'B0dun@DESKTOP-J3I95AK.(none)')
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git config --global user.email "pestovamary09@gmail.com"
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git config --global user.name "PestovaMary"
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git commit -m "Add menu"
+[master (root-commit) f46058a] Add menu
+ 11 files changed, 176 insertions(+)
+ create mode 100644 App.config
+ create mode 100644 Program.cs
+ create mode 100644 Properties/AssemblyInfo.cs
+ create mode 100644 calculator.csproj
+ create mode 100644 calculator.sln
+ create mode 100644 obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+ create mode 100644 obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+ create mode 100644 obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+ create mode 100644 obj/Debug/calculator.csproj.CoreCompileInputs.cache
+ create mode 100644 obj/Debug/calculator.csprojAssemblyReference.cache
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch menuItem1
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem1
+Switched to branch 'menuItem1'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git branch
+  master
+* menuItem1
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git checkout master
+Switched to branch 'master'
+M       Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git diff
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+diff --git a/Program.cs b/Program.cs
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+No next tag  (press RETURN)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Console.ReadKey();
+         }
+     }
+-}
++}
+\ No newline at end of file
+
+
+
+
+
+
+             Console.ReadKey();
+
+
+
+
+...skipping...
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+Log file is already in use  (press RETURN)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Console.ReadKey();
+set mark: ...skipping...
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+             Console.ReadKey();
+         }
+     }
+-}
++}
+\ No newline at end of file
+set mark: ...skipping...
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+             Console.ReadKey();
+         }
+     }
+-}
++}
+\ No newline at end of file
+set mark: ...skipping...
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+diff --git a/Program.cs b/Program.cs
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          SEARCHING
+
+  /pattern          *  Search forward for (N-th) matching line.
+  ?pattern          *  Search backward for (N-th) matching line.
+  n                 *  Repeat previous search (for N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &pattern          *  Display only matching lines
+        ---------------------------------------------------
+        A search pattern may be preceded by one or more of:
+        ^N or !  Search for NON-matching lines.
+        ^E or *  Search multiple files (pass thru END OF FILE).
+        ^F or @  Start search at FIRST file (for /) or last file (for ?).
+        ^K       Highlight matches, but don't move (KEEP position).
+        ^R       Don't use REGULAR EXPRESSIONS.
+ ---------------------------------------------------------------------------
+
+                           JUMPING
+
+  g  <  ESC-<       *  Go to first line in file (or line N).
+  G  >  ESC->       *  Go to last line in file (or line N).
+  p  %              *  Go to beginning of file (or N percent into file).
+  t                 *  Go to the (N-th) next tag.
+  T                 *  Go to the (N-th) previous tag.
+  {  (  [           *  Find close bracket } ) ].
+  }  )  ]           *  Find open bracket { ( [.
+  ESC-^F <c1> <c2>  *  Find close bracket <c2>.
+  ESC-^B <c1> <c2>  *  Find open bracket <c1>
+        ---------------------------------------------------
+ ---------------------------------------------------------------------------
+
+                          SEARCHING
+
+  /pattern          *  Search forward for (N-th) matching line.
+  ?pattern          *  Search backward for (N-th) matching line.
+  n                 *  Repeat previous search (for N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &pattern          *  Display only matching lines
+        ---------------------------------------------------
+        A search pattern may be preceded by one or more of:
+        ^N or !  Search for NON-matching lines.
+        ^E or *  Search multiple files (pass thru END OF FILE).
+        ^F or @  Start search at FIRST file (for /) or last file (for ?).
+        ^K       Highlight matches, but don't move (KEEP position).
+        ^R       Don't use REGULAR EXPRESSIONS.
+ ---------------------------------------------------------------------------
+
+                           JUMPING
+
+  g  <  ESC-<       *  Go to first line in file (or line N).
+  G  >  ESC->       *  Go to last line in file (or line N).
+  p  %              *  Go to beginning of file (or N percent into file).
+  t                 *  Go to the (N-th) next tag.
+  T                 *  Go to the (N-th) previous tag.
+  {  (  [           *  Find close bracket } ) ].
+  }  )  ]           *  Find open bracket { ( [.
+  ESC-^F <c1> <c2>  *  Find close bracket <c2>.
+  ESC-^B <c1> <c2>  *  Find open bracket <c1>
+        ---------------------------------------------------
+        Each "find close bracket" command goes forward to the close bracket
+          matching the (N-th) open bracket in the top line.
+        Each "find open bracket" command goes backward to the open bracket
+          matching the (N-th) close bracket in the bottom line.
+
+  m<letter>            Mark the current top line with <letter>.
+  M<letter>            Mark the current bottom line with <letter>.
+  '<letter>            Go to a previously marked position.
+  ''                   Go to the previous position.
+  ^X^X                 Same as '.
+  ESC-M<letter>        Clear a mark.
+        ---------------------------------------------------
+        A mark is any upper-case or lower-case letter.
+        Certain marks are predefined:
+             ^  means  beginning of the file
+             $  means  end of the file
+ ---------------------------------------------------------------------------
+
+                        CHANGING FILES
+
+  :e [file]            Examine a new file.
+  ^X^V                 Same as :e.
+  :n                *  Examine the (N-th) next file from the command line.
+  :p                *  Examine the (N-th) previous file from the command line.
+  :x                *  Examine the first (or N-th) file from the command line.
+  :d                   Delete the current file from the command line list.
+  =  ^G  :f            Print current file name.
+ ---------------------------------------------------------------------------
+
+                    MISCELLANEOUS COMMANDS
+
+  -<flag>              Toggle a command line option [see OPTIONS below].
+  --<name>             Toggle a command line option, by name.
+  _<flag>              Display the setting of a command line option.
+  __<name>             Display the setting of an option, by name.
+  +cmd                 Execute the less cmd each time a new file is examined.
+
+  !command             Execute the shell command with $SHELL.
+  |Xcommand            Pipe file between current pos & mark X to shell command.
+  s file               Save input to a file.
+  v                    Edit the current file with $VISUAL or $EDITOR.
+  V                    Print version number of "less".
+ ---------------------------------------------------------------------------
+
+                           OPTIONS
+
+        Most options may be changed either on the command line,
+        or from within less by using the - or -- command.
+        Options may be given in one of two forms: either a single
+        character preceded by a -, or a name preceded by --.
+
+  -?  ........  --help
+                  Display help (from command line).
+  -a  ........  --search-skip-screen
+                  Search skips current screen.
+  -A  ........  --SEARCH-SKIP-SCREEN
+                  Search starts just after target line.
+  -b [N]  ....  --buffers=[N]
+                  Number of buffers.
+  -B  ........  --auto-buffers
+                  Don't automatically allocate buffers for pipes.
+  -c  ........  --clear-screen
+                  Repaint by clearing rather than scrolling.
+  -d  ........  --dumb
+                  Dumb terminal.
+  -D [xn.n]  .  --color=xn.n
+                  Set screen colors. (MS-DOS only)
+  -e  -E  ....  --quit-at-eof  --QUIT-AT-EOF
+                  Quit at end of file.
+  -f  ........  --force
+                  Force open non-regular files.
+  -F  ........  --quit-if-one-screen
+                  Quit if entire file fits on first screen.
+  -g  ........  --hilite-search
+                  Highlight only last match for searches.
+  -G  ........  --HILITE-SEARCH
+                  Don't highlight any matches for searches.
+  -h [N]  ....  --max-back-scroll=[N]
+                  Backward scroll limit.
+  -i  ........  --ignore-case
+                  Ignore case in searches that do not contain uppercase.
+  -I  ........  --IGNORE-CASE
+                  Ignore case in all searches.
+  -j [N]  ....  --jump-target=[N]
+                  Screen position of target lines.
+  -J  ........  --status-column
+                  Display a status column at left edge of screen.
+  -k [file]  .  --lesskey-file=[file]
+                  Use a lesskey file.
+  -K            --quit-on-intr
+                  Exit less in response to ctrl-C.
+  -L  ........  --no-lessopen
+                  Ignore the LESSOPEN environment variable.
+  -m  -M  ....  --long-prompt  --LONG-PROMPT
+                  Set prompt style.
+  -n  -N  ....  --line-numbers  --LINE-NUMBERS
+                  Don't use line numbers.
+  -o [file]  .  --log-file=[file]
+                  Copy to log file (standard input only).
+  -O [file]  .  --LOG-FILE=[file]
+                  Copy to log file (unconditionally overwrite).
+  -p [pattern]  --pattern=[pattern]
+                  Start at pattern (from command line).
+  -P [prompt]   --prompt=[prompt]
+                  Define new prompt.
+  -q  -Q  ....  --quiet  --QUIET  --silent --SILENT
+                  Quiet the terminal bell.
+  -r  -R  ....  --raw-control-chars  --RAW-CONTROL-CHARS
+                  Output "raw" control characters.
+  -s  ........  --squeeze-blank-lines
+                  Squeeze multiple blank lines.
+  -S  ........  --chop-long-lines
+                  Chop (truncate) long lines rather than wrapping.
+  -t [tag]  ..  --tag=[tag]
+                  Find a tag.
+  -T [tagsfile] --tag-file=[tagsfile]
+                  Use an alternate tags file.
+  -u  -U  ....  --underline-special  --UNDERLINE-SPECIAL
+                  Change handling of backspaces.
+  -V  ........  --version
+                  Display the version number of "less".
+  -w  ........  --hilite-unread
+                  Highlight first new line after forward-screen.
+  -W  ........  --HILITE-UNREAD
+                  Highlight first new line after any forward movement.
+  -x [N[,...]]  --tabs=[N[,...]]
+                  Set tab stops.
+  -X  ........  --no-init
+                  Don't use termcap init/deinit strings.
+!= 5);
+/usr/bin/bash: -c: line 0: syntax error near unexpected token `)'
+/usr/bin/bash: -c: line 0: `= 5);'
+!done  (press RETURN)
+...skipping...
+  -D [xn.n]  .  --color=xn.n
+                  Set screen colors. (MS-DOS only)
+  -e  -E  ....  --quit-at-eof  --QUIT-AT-EOF
+                  Quit at end of file.
+  -f  ........  --force
+                  Force open non-regular files.
+  -F  ........  --quit-if-one-screen
+                  Quit if entire file fits on first screen.
+  -g  ........  --hilite-search
+                  Highlight only last match for searches.
+  -G  ........  --HILITE-SEARCH
+                  Don't highlight any matches for searches.
+  -h [N]  ....  --max-back-scroll=[N]
+                  Backward scroll limit.
+  -i  ........  --ignore-case
+                  Ignore case in searches that do not contain uppercase.
+  -I  ........  --IGNORE-CASE
+                  Ignore case in all searches.
+  -j [N]  ....  --jump-target=[N]
+                  Screen position of target lines.
+  -J  ........  --status-column
+                  Display a status column at left edge of screen.
+  -k [file]  .  --lesskey-file=[file]
+                  Use a lesskey file.
+  -K            --quit-on-intr
+                  Exit less in response to ctrl-C.
+  -L  ........  --no-lessopen
+                  Ignore the LESSOPEN environment variable.
+  -m  -M  ....  --long-prompt  --LONG-PROMPT
+                  Set prompt style.
+  -n  -N  ....  --line-numbers  --LINE-NUMBERS
+                  Don't use line numbers.
+  -o [file]  .  --log-file=[file]
+                  Copy to log file (standard input only).
+  -O [file]  .  --LOG-FILE=[file]
+                  Copy to log file (unconditionally overwrite).
+  -p [pattern]  --pattern=[pattern]
+                  Start at pattern (from command line).
+  -P [prompt]   --prompt=[prompt]
+                  Define new prompt.
+  -q  -Q  ....  --quiet  --QUIET  --silent --SILENT
+                  Quiet the terminal bell.
+  -r  -R  ....  --raw-control-chars  --RAW-CONTROL-CHARS
+                  Output "raw" control characters.
+  -s  ........  --squeeze-blank-lines
+                  Squeeze multiple blank lines.
+  -S  ........  --chop-long-lines
+                  Chop (truncate) long lines rather than wrapping.
+  -t [tag]  ..  --tag=[tag]
+                  Find a tag.
+  -T [tagsfile] --tag-file=[tagsfile]
+                  Use an alternate tags file.
+  -u  -U  ....  --underline-special  --UNDERLINE-SPECIAL
+                  Change handling of backspaces.
+  -V  ........  --version
+                  Display the version number of "less".
+  -w  ........  --hilite-unread
+                  Highlight first new line after forward-screen.
+  -W  ........  --HILITE-UNREAD
+                  Highlight first new line after any forward movement.
+  -x [N[,...]]  --tabs=[N[,...]]
+                  Set tab stops.
+  -X  ........  --no-init
+                  Don't use termcap init/deinit strings.
+  -y [N]  ....  --max-forw-scroll=[N]
+                  Forward scroll limit.
+  -z [N]  ....  --window=[N]
+                  Set size of window.
+  -" [c[c]]  .  --quotes=[c[c]]
+                  Set shell quote characters.
+HELP -- Press RETURN for more, or q when done...skipping...
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+     {
+         const int menuSize = 5;
+-
++
++
+
+         static void Main(string[] args)
+         {
+-            int A, B;
++            int A = 0, B = 0;
+             int menuIndex;
+
+             do
+             {
+                 Console.Clear();
+                 Console.WriteLine("Input A and B");
+-                A = int.Parse(Console.ReadLine());
+-                B = int.Parse(Console.ReadLine());
+diff --git a/Program.cs b/Program.cs
+index 4a68d7b..c9d8f4c 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -10,40 +10,46 @@ namespace calculator
+     class Program
+-                Console.WriteLine("1. Addition");
+-                Console.WriteLine("2. Subtraction");
+-                Console.WriteLine("3. Multiplication");
+-                Console.WriteLine("4. Division");
+-                Console.WriteLine("5. Exit!");
++
++                Console.WriteLine("1. Add A");
++                Console.WriteLine("2. Add B");
++                Console.WriteLine("3. Addition");
++                Console.WriteLine("4. Subtraction");
++                Console.WriteLine("5. Multiplication");
++                Console.WriteLine("6. Division");
++                Console.WriteLine("7. Exit!");
+                 menuIndex = int.Parse(Console.ReadLine());
+                 switch (menuIndex)
+                 {
+                     case 1:
++                        //addA(A);
++                        break;
++
++                    case 3:
+                         //addition(A, B);
+                         break;
+
+-                    case 2:
++                    case 4:
+                         //subtraction(A, B);
+                         break;
+
+-                    case 3:
++                    case 5:
+                         //multiplication(A, B);
+                         break;
+
+-                    case 4:
++                    case 6:
+                         //division(A, B);
+                         break;
+                 }
+@@ -52,4 +58,4 @@ namespace calculator
+             Console.ReadKey();
+         }
+     }
+-}
++}
+\ No newline at end of file
+Cannot edit standard input  (press RETURN)
+
+
+
+
+
+
+
+
+
+
+
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add .
+error: open(".vs/calculator/v15/Server/sqlite3/db.lock"): Permission denied
+error: unable to index file '.vs/calculator/v15/Server/sqlite3/db.lock'
+fatal: adding files failed
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Program.cs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vs/
+        bin/
+        ing System
+        obj/Debug/calculator.csproj.FileListAbsolute.txt
+        obj/Debug/calculator.exe
+        obj/Debug/calculator.pdb
+
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add bin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add obj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Program.cs
+        new file:   bin/Debug/calculator.exe
+        new file:   bin/Debug/calculator.exe.config
+        new file:   bin/Debug/calculator.pdb
+        new file:   obj/Debug/calculator.csproj.FileListAbsolute.txt
+        new file:   obj/Debug/calculator.exe
+        new file:   obj/Debug/calculator.pdb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vs/
+        ing System
+
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git add ing System
+fatal: pathspec 'ing' did not match any files
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git commit -m "Change Menu"
+[master accd5df] Change Menu
+ 7 files changed, 36 insertions(+), 13 deletions(-)
+ create mode 100644 bin/Debug/calculator.exe
+ create mode 100644 bin/Debug/calculator.exe.config
+ create mode 100644 bin/Debug/calculator.pdb
+ create mode 100644 obj/Debug/calculator.csproj.FileListAbsolute.txt
+ create mode 100644 obj/Debug/calculator.exe
+ create mode 100644 obj/Debug/calculator.pdb
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem1
+Switched to branch 'menuItem1'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git branch -D menuItem1
+error: Cannot delete branch 'menuItem1' checked out at 'C:/git/calculator/calculator'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git checkout master
+Switched to branch 'master'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch -D menuItem1
+Deleted branch menuItem1 (was f46058a).
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch
+* master
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch menuItem1
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem1
+Switched to branch 'menuItem1'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git status
+On branch menuItem1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Program.cs
+        modified:   bin/Debug/calculator.exe
+        modified:   bin/Debug/calculator.pdb
+        modified:   obj/Debug/calculator.exe
+        modified:   obj/Debug/calculator.pdb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vs/
+        ing System
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git status
+On branch menuItem1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Program.cs
+        modified:   bin/Debug/calculator.exe
+        modified:   bin/Debug/calculator.pdb
+        modified:   obj/Debug/calculator.exe
+        modified:   obj/Debug/calculator.pdb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vs/
+        ing System
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git diff
+diff --git a/Program.cs b/Program.cs
+index 7fb0d8c..59413c9 100644
+--- a/Program.cs
++++ b/Program.cs
+@@ -11,7 +11,13 @@ namespace calculator
+     {
+         const int menuSize = 5;
+
+-
++        static void addA(int A)
++        {
++            Console.Clear();
++            Console.WriteLine("Input A");
++            A = int.Parse(Console.ReadLine());
++            Console.ReadKey();
++        }
+
+         static void Main(string[] args)
+         {
+@@ -21,7 +27,6 @@ namespace calculator
+             do
+             {
+                 Console.Clear();
+-                Console.WriteLine("Input A and B");
+
+                 Console.WriteLine("1. Add A");
+                 Console.WriteLine("2. Add B");
+@@ -34,7 +39,7 @@ namespace calculator
+                 switch (menuIndex)
+                 {
+                     case 1:
+-                        //addA(A);
++                        addA(A);
+                         break;
+
+                     case 2:
+@@ -58,7 +63,7 @@ namespace calculator
+                         break;
+                 }
+
+-            } while (menuIndex != 5);
++            } while (menuIndex != 7);
+             Console.ReadKey();
+         }
+     }
+diff --git a/bin/Debug/calculator.exe b/bin/Debug/calculator.exe
+index d6dab31..d7a6d80 100644
+Binary files a/bin/Debug/calculator.exe and b/bin/Debug/calculator.exe differ
+diff --git a/bin/Debug/calculator.pdb b/bin/Debug/calculator.pdb
+index d11403c..75ebbcb 100644
+Binary files a/bin/Debug/calculator.pdb and b/bin/Debug/calculator.pdb differ
+diff --git a/obj/Debug/calculator.exe b/obj/Debug/calculator.exe
+index d6dab31..d7a6d80 100644
+Binary files a/obj/Debug/calculator.exe and b/obj/Debug/calculator.exe differ
+diff --git a/obj/Debug/calculator.pdb b/obj/Debug/calculator.pdb
+index d11403c..75ebbcb 100644
+Binary files a/obj/Debug/calculator.pdb and b/obj/Debug/calculator.pdb differ
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git add bin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git add obj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git add calculator.sln
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git add calculator.csproj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git status
+On branch menuItem1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Program.cs
+        modified:   bin/Debug/calculator.exe
+        modified:   bin/Debug/calculator.pdb
+        modified:   obj/Debug/calculator.exe
+        modified:   obj/Debug/calculator.pdb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vs/
+        ing System
+
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git commit -m "Add input A"
+[menuItem1 23d05cf] Add input A
+ 5 files changed, 9 insertions(+), 4 deletions(-)
+ rewrite bin/Debug/calculator.exe (73%)
+ rewrite obj/Debug/calculator.exe (73%)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem1)
+$ git checkout master
+Switched to branch 'master'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch menuItem2
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem2
+Switched to branch 'menuItem2'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem2)
+$ git add bin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem2)
+$ git add obj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem2)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem2)
+$ git commit -m "Add input B"
+[menuItem2 b3e0dde] Add input B
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem2)
+$ git checkout master
+Switched to branch 'master'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch menuItem3
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem3
+Switched to branch 'menuItem3'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem3)
+$ git Add Program.cs
+fatal: cannot handle Add as a builtin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem3)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem3)
+$ git add bin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem3)
+$ git add obj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem3)
+$ git commit -m "Add Sum"
+[menuItem3 33685df] Add Sum
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem3)
+$ git checkout master
+Switched to branch 'master'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch menuItem4
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem4
+Switched to branch 'menuItem4'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem4)
+$ git add obj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem4)
+$ git add bin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem4)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem4)
+$ git commit -m "Add Sub"
+[menuItem4 54e06c6] Add Sub
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem4)
+$ git checkout master
+Switched to branch 'master'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch menuItem5
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem5
+Switched to branch 'menuItem5'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem5)
+$ git Add
+fatal: cannot handle Add as a builtin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem5)
+$ git add obj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem5)
+$ git add bin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem5)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem5)
+$ git commit -m "Add Multi"
+[menuItem5 eda8ae4] Add Multi
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem5)
+$ git checkout master
+Switched to branch 'master'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch menuItem6
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem6
+Switched to branch 'menuItem6'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem6)
+$ git add obj
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem6)
+$ git add bin
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem6)
+$ git add Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem6)
+$ git commit - m "Add Div"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'Add Div' did not match any file(s) known to git
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem6)
+$ git checkout master
+Switched to branch 'master'
+M       Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout menuItem6
+Switched to branch 'menuItem6'
+M       Program.cs
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem6)
+$ git commit -m "Add Div"
+[menuItem6 47295bd] Add Div
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (menuItem6)
+$ git checkout master
+Switched to branch 'master'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vs/
+        ing System
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch
+* master
+  menuItem1
+  menuItem2
+  menuItem3
+  menuItem4
+  menuItem5
+  menuItem6
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git branch final
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git checkout final
+Switched to branch 'final'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem1
+Updating accd5df..23d05cf
+Fast-forward
+ Program.cs               |  13 +++++++++----
+ bin/Debug/calculator.exe | Bin 5120 -> 5120 bytes
+ bin/Debug/calculator.pdb | Bin 15872 -> 15872 bytes
+ obj/Debug/calculator.exe | Bin 5120 -> 5120 bytes
+ obj/Debug/calculator.pdb | Bin 15872 -> 15872 bytes
+ 5 files changed, 9 insertions(+), 4 deletions(-)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem2
+Auto-merging Program.cs
+CONFLICT (content): Merge conflict in Program.cs
+Automatic merge failed; fix conflicts and then commit the result.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final|MERGING)
+$ git commit -a -m "fix"
+[final 6c96314] fix
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem2
+Already up to date.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem3
+Auto-merging Program.cs
+CONFLICT (content): Merge conflict in Program.cs
+Automatic merge failed; fix conflicts and then commit the result.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final|MERGING)
+$ git commit -a -m "fix"
+[final 82f57bf] fix
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem3
+Already up to date.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem4
+Auto-merging Program.cs
+CONFLICT (content): Merge conflict in Program.cs
+Automatic merge failed; fix conflicts and then commit the result.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final|MERGING)
+$ git merge menuItem4
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final|MERGING)
+$ git commit -a -m "fix"
+[final 52e1072] fix
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem4
+Already up to date.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem5
+Auto-merging Program.cs
+CONFLICT (content): Merge conflict in Program.cs
+Automatic merge failed; fix conflicts and then commit the result.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final|MERGING)
+$ git commit -a -m "fix"
+[final fffc6fc] fix
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem5
+Already up to date.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem6
+Auto-merging Program.cs
+CONFLICT (content): Merge conflict in Program.cs
+Automatic merge failed; fix conflicts and then commit the result.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final|MERGING)
+$ git commit -a -m "fix"
+[final 19ceffb] fix
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git merge menuItem6
+Already up to date.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git ckrckout master
+git: 'ckrckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (final)
+$ git checkout master
+Switched to branch 'master'
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git merge final
+Updating accd5df..19ceffb
+Fast-forward
+ Program.cs               |  57 ++++++++++++++++++++++++++++++++++++++++-------
+ bin/Debug/calculator.exe | Bin 5120 -> 5120 bytes
+ bin/Debug/calculator.pdb | Bin 15872 -> 15872 bytes
+ obj/Debug/calculator.exe | Bin 5120 -> 5120 bytes
+ obj/Debug/calculator.pdb | Bin 15872 -> 15872 bytes
+ 5 files changed, 49 insertions(+), 8 deletions(-)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git remote add origrn https://github.com/PestovaMary/calculator.git
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git remote -v
+origrn  https://github.com/PestovaMary/calculator.git (fetch)
+origrn  https://github.com/PestovaMary/calculator.git (push)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git remote add origrn https://github.com/PestovaMary/calculator
+fatal: remote origrn already exists.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git remote add origin https://github.com/PestovaMary/calculator
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git remote -v
+origin  https://github.com/PestovaMary/calculator (fetch)
+origin  https://github.com/PestovaMary/calculator (push)
+origrn  https://github.com/PestovaMary/calculator.git (fetch)
+origrn  https://github.com/PestovaMary/calculator.git (push)
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git push -u origin master
+remote: Permission to PestovaMary/calculator.git denied to Nightinga1e.
+fatal: unable to access 'https://github.com/PestovaMary/calculator/': The requested URL returned error: 403
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git push -u origin master
+remote: Permission to PestovaMary/calculator.git denied to Nightinga1e.
+fatal: unable to access 'https://github.com/PestovaMary/calculator/': The requested URL returned error: 403
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$ git push -u origin master
+Enumerating objects: 63, done.
+Counting objects: 100% (63/63), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (63/63), 15.27 KiB | 244.00 KiB/s, done.
+Total 63 (delta 33), reused 0 (delta 0)
+remote: Resolving deltas: 100% (33/33), done.
+To https://github.com/PestovaMary/calculator
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+B0dun@DESKTOP-J3I95AK MINGW64 /c/git/calculator/calculator (master)
+$
